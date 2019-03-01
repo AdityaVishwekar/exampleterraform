@@ -13,7 +13,8 @@ variable "compartment_ocid" {
 variable "ssh_public_key" {
     default = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC9nFLaLfJZvgcSjhmRnPPpMKVUYiFnxOnoXYDRQXzqmlVSoEToactzTK3l1qvwrg5xsuY9nAFfVPdXtPRoxzuLP+SrDn5mRfoEbDgwtKqdnIeQa0iOUFCHZsJUYJAe1O2VHfegXm3UEMWOKSIJWfElm0iLowEdWgejBeVcSVEQ4lBiYUfhlZbkOp7YFanWWp8Rsq8NufZq6rCgaQKFoZ0n2Jr3f8Me4oAmDnImuFcbyP2McRmoVNyv6kBB1PZ7xXaCk8Kb6ysUF18V1tRkudJBIfSRpVy4nHkm/WyoghnJ2JhTqadiEnC7CPeNLiJpA6AreQOv5a/CRWOI7zqkSpdv"
 }
-variable "ssh_private_key" {}
+variable "ssh_private_key" {
+    default = "./oci_api_key.pem"}
 # Choose an Availability Domain
 variable "AD" {
     default = "1"
